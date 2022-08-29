@@ -220,7 +220,7 @@ output "lb-dns" {
   value       = aws_lb.test_lb.dns_name
 }
 
-output private-key-temp {
+output private-key {
   description = "Private Key"
   value       = "${path.module}/${aws_key_pair.generated_key.key_name}.pem"
 }
